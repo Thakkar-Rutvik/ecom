@@ -1,0 +1,276 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500&display=swap');
+
+::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Header component css  */
+body {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 500;
+    color: #000;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+header {
+    display: flex;
+    padding: 15px 30px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+}
+
+.head-logo {
+    width: 150px;
+}
+
+.head-logo img {
+    width: 100%;
+}
+
+.head-links a {
+    text-decoration: none;
+    color: #000;
+    padding: 15px;
+    font-size: 20px;
+    outline: none;
+}
+
+.btn-theme {
+    font-size: 20px;
+    padding: 15px 30px;
+    line-height: 1;
+    background-color: #000;
+    color: #fff;
+    text-transform: capitalize;
+    border: 1px solid transparent;
+    transition: 0.2s all ease;
+    letter-spacing: 1.5px;
+}
+
+header .btn-theme {
+    margin-left: 15px;
+}
+
+.btn-theme:hover {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+}
+
+.log-foot .btn-theme {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.log-foot {
+    padding-bottom: 20px;
+}
+
+.modal-dialog {
+    max-width: 700px;
+}
+
+.log-foot p {
+    margin: 0;
+}
+
+.log-modal {
+    max-width: 700px;
+}
+
+.modal-body {
+    padding-bottom: 0;
+}
+
+.head-links .active {
+    font-weight: 600;
+}
+
+.table-contain {
+    padding: 0 30px;
+    margin-top: 50px;
+}
+
+.table>:not(caption)>*>* {
+    padding: 15px 20px;
+    vertical-align: middle;
+}
+
+.table-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #000;
+}
+
+.table img {
+    max-width: 120px;
+    max-height: 120px;
+}
+
+.search-field {
+    display: flex;
+    align-items: center;
+}
+
+.search-field input {
+    margin-right: 15px;
+    width: 320px;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #000;
+    outline: none;
+    box-shadow: none !important;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.form-feild {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-feild label {
+    margin-bottom: 10px;
+}
+
+/* .btn.active {
+  background-color: #000;
+  border-color: #000;
+} */
+
+.form-check-input:checked {
+    background-color: #000;
+    border-color: #000;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: #000;
+    --bs-btn-border-color: #000;
+    --bs-btn-hover-bg: #000;
+    --bs-btn-hover-border-color: #000;
+    --bs-btn-active-bg: #000;
+    --bs-btn-active-border-color: #000;
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-border-color: #000;
+}
+
+/* border-pagination */
+.b-pagination-outer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    margin: 30px 0;
+}
+
+#border-pagination {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center
+}
+
+#border-pagination li {
+    display: inline;
+}
+
+#border-pagination li span {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    float: left;
+    cursor: pointer;
+}
+
+#border-pagination li span {
+    -webkit-transition: background-color 0.4s;
+    transition: background-color 0.4s
+}
+
+#border-pagination li span.active {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+#border-pagination li span:hover:not(.active) {
+    background: #ddd;
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid #000;
+}
+
+.offcanvas-header .btn-close {
+    opacity: 1;
+}
+
+.cart-card {
+    display: flex;
+}
+
+.cart-card img {
+    width: 35%;
+}
+
+.cart-card .card-des {
+    width: 65%;
+    padding: 10px;
+}
+
+.card-des h4,
+.card-des p {
+    margin: 0;
+}
+
+.cart-card .item-count {
+    display: inline-flex;
+    margin-top: 10px;
+    border: 1px solid #000;
+}
+
+.item-count span {
+    min-width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    padding: 0 5px;
+}
+
+.item-count span:nth-child(2) {
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+.item-count span:first-child,
+.item-count span:last-child {
+    background-color: #000;
+    color: #fff;
+    transition: 0.2s all ease;
+    cursor: pointer;
+}
+
+.item-count span:first-child:hover,
+.item-count span:last-child:hover {
+    background-color: #fff;
+    color: #000;
+
+}
+
+.table-contain .card img {
+    height: 230px;
+}
